@@ -131,7 +131,7 @@ jobs:
     needs: push_release_tags
     name: Build IPAM container image
     if: github.repository == 'metal3-io/ip-address-manager'
-    uses: metal3-io/project-infra/.github/workflows/container-image-build.yml@main # zizmor: ignore[unpinned-uses]
+    uses: metal3-io/project-infra/.github/workflows/container-image-build.yml@f3c3ae367c63cada0274fc96ee6c0a1abd28fa97 # main
     with:
       image-name: "ip-address-manager"
       pushImage: true
